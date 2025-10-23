@@ -5,13 +5,13 @@
 }
 
 :root {
-    --font-color-light: #c9c8c8;
+    --font-color-light: #d9e2cf;
     --font-color-dark: black;
     --background-color-darkest: rgb(27, 27, 27);
-    --backround-color-dark: rgb(44, 44, 95);
-    --background-color-nav: blue;
-    --background-color-nav-active: #04AA6D;
-    --background-color-nav-hover: 
+    --backround-color-dark: #260a08;
+    --background-color-nav: #7e201a;
+    --background-color-nav-active: #776131;
+    --background-color-nav-hover: #d9e2cf;
 
 }
 
