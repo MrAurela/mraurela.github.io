@@ -11,7 +11,7 @@
     --backround-color-dark: rgb(44, 44, 95);
     --background-color-nav: blue;
     --background-color-nav-active: #04AA6D;
-    --background-color-nav-hover: 
+    --background-color-nav-hover: #c9c8c8;
 
 }
 
@@ -127,4 +127,13 @@ footer p {
 
 .columns {
   flex: 50%;
+}
+
+.cv-section {
+    width: 70%;
+    margin: auto;
+}
+
+.cv-background {
+    background-color: var(--backround-color-dark);
 }
