@@ -1,21 +1,29 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
+let slideIndex = 1;
+let slides = document.getElementsByClassName("mySlides");
+
+showSlides(slideIndex);
+setTimeout(timedNextSlide, 2000); // Change image every 2 seconds
+
+function nextSlide(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+function setSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+
+  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex < 1) {slideIndex = slides.length}
   slides[slideIndex-1].style.display = "flex";
+}
+
+function timedNextSlide() {
+  nextSlide(1);
+  setTimeout(timedNextSlide, 5000); // Change image every 2 seconds
 }
