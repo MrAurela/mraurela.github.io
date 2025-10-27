@@ -70,7 +70,7 @@ p.landing-page-element {
   overflow: hidden;
   top: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   z-index: 10;
 }
@@ -84,6 +84,11 @@ p.landing-page-element {
     text-decoration: none;
     font-size: 17px;
 }
+
+#navbar a:first-of-type {
+  margin-right: 14px;
+}
+
 
 #navbar a:hover {
   background-color: var(--background-color-nav-hover);
@@ -112,7 +117,8 @@ p.landing-page-element {
 }
 
 footer {
-  background-color: var(--background-color-darkest)
+  background-color: var(--background-color-darkest);
+  width: auto;
 }
 
 footer p {
@@ -142,7 +148,8 @@ footer p {
 .mySlides {
   display: none; /*changed to "flex" in code when active*/
   flex-direction: column;
-  height: 90%;
+  height: 100%;
+  width: auto;
   padding: 0;
   margin: 0;
 }
@@ -152,6 +159,7 @@ footer p {
   flex: 1 1 auto; /* Let it take remaining space */
   min-height: 0;
   object-fit: contain;
+  width: auto;
 }
 
 /* Next & previous buttons */
@@ -189,11 +197,17 @@ footer p {
   text-align: center;
   flex: 0 0 auto;
   margin: 0;
-  padding: 0.5em;
+  
 }
 
 .title {
-  font-size: 25px;
+  font-size: xx-large;
+  padding: 15px;
+}
+
+.tagline {
+  font-size: medium;
+  padding-bottom: 20px;
 }
 
 /* The dots/bullets/indicators */
@@ -226,7 +240,7 @@ footer p {
 .slideshow-container {
     background-color: var(--backround-color-dark);
     height: calc(100vh - 50px);
-    width: 100vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
