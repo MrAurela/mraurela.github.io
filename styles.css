@@ -65,7 +65,7 @@ p.landing-page-element {
   height: 70vh;
 }
 
-#navbar {
+.navbar {
   background-color: var(--background-color-nav);
   overflow: hidden;
   top: 0;
@@ -75,9 +75,8 @@ p.landing-page-element {
   z-index: 10;
 }
 
-#navbar a {
+.navbar a {
     height: 100%;
-    float: right;
     color: var(--font-color-light);
     text-align: center;
     padding: 14px 16px;
@@ -85,17 +84,25 @@ p.landing-page-element {
     font-size: 17px;
 }
 
-#navbar a:first-of-type {
+.navbar a.right {
+    float: right;
+}
+
+.navbar a.left {
+    float: left;
+}
+
+.navbar a.right:first-of-type {
   margin-right: 14px;
 }
 
 
-#navbar a:hover {
+.navbar a:hover {
   background-color: var(--background-color-nav-hover);
   color: black;
 }
 
-#navbar a.active {
+.navbar a.right.active {
   background-color: var(--background-color-nav-active);
   color: var(--font-color-light);
 }
@@ -128,17 +135,9 @@ footer p {
   text-align: center;
 }
 
-.two-columns {
-   display: flex;
-}
-
-.columns {
-  flex: 50%;
-}
-
 .cv-section {
     width: 70%;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .cv-background {
