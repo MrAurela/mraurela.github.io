@@ -27,3 +27,7 @@ function timedNextSlide() {
   nextSlide(1);
   setTimeout(timedNextSlide, 5000); // Change image every 2 seconds
 }
+
+function myFunction() {
+  alert("Clicked");
+}
