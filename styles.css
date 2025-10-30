@@ -5,26 +5,17 @@
 }
 
 :root {
-    --font-color-light: #c9c8c8;
-    --font-color-dark: black;
-    --background-color-darkest: rgb(27, 27, 27);
-    --backround-color-dark: rgb(44, 44, 95);
+    --font-color-light: #ececec;
+    --font-color-dark: rgb(27, 27, 27);
+    --background-color-black: rgb(27, 27, 27);
+    --background-color-dark: rgb(44, 44, 95);
     --background-color-nav: blue;
     --background-color-nav-active: #04AA6D;
-    --background-color-nav-hover: #c9c8c8;
-
-}
-
-h1, h2, p {
-    color: var(--font-color-light)
-}
-
-.light {
-  color: var((--font-color-dark));
+    --background-color-light: #c9c8c8;
+    --background-color-white: #ececec;
 }
 
 #landing-page {
-    background-color: var(--backround-color-dark);
     height: calc(100vh - 50px);
     width: 100%;
     display: flex;
@@ -102,8 +93,8 @@ p.landing-page-element {
 
 
 .navbar a:hover {
-  background-color: var(--background-color-nav-hover);
-  color: black;
+  background-color: var(--background-color-light);
+  color: var(--font-color-dark);
 }
 
 .navbar a.right.active {
@@ -113,7 +104,6 @@ p.landing-page-element {
 
 #projects {
   height: 500px;
-  background-color: var(--background-color-darkest);
 }
 
 .project-tile {
@@ -124,11 +114,10 @@ p.landing-page-element {
 
 #contact {
   height: 500px;
-  background-color: var(--backround-color-dark);
 }
 
 footer {
-  background-color: var(--background-color-darkest);
+  background-color: var(--background-color-black);
   width: auto;
 }
 
@@ -144,9 +133,6 @@ footer p {
     margin: 100px auto;
 }
 
-.cv-background {
-    background-color: var(--backround-color-dark);
-}
 
 .mySlides {
   display: none; /*changed to "flex" in code when active*/
@@ -194,8 +180,6 @@ footer p {
 
 /* Caption text */
 .title, .tagline {
-  background-color: var(--background-color-darkest);
-  color: var(--font-color-light);
   font-size: 15px;
   text-align: center;
   flex: 0 0 auto;
@@ -276,6 +260,42 @@ footer p {
   width: 350px;
 }
 
+body {
+  --background-color: var(--background-color-white);
+  --font-color: var(var(--font-color-dark));
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.black-background {
+  --background-color: var(--background-color-black);
+  --font-color: var(--font-color-light);
+}
+
+.dark-background {
+ --background-color: var(--background-color-dark);
+  --font-color: var(--font-color-light);
+}
+
+.white-background {
+  --background-color: var(--background-color-white);
+  --font-color: var(--font-color-dark);
+}
+
+.light-background {
+  --background-color: var(--background-color-light);
+  --font-color: var(--font-color-dark);
+}
+
+.dark-background,
+.black-background,
+.white-background,
+.light-background {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
 .project-card a {
   height: 100%;
   width: 100%;
@@ -311,9 +331,7 @@ footer p {
   font-size: xx-large;
   text-align: middle;
   line-height: 50px;
-  color: var(--font-color-dark);
 
-  background-color: var(--background-color-nav-hover);
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
 }
 
