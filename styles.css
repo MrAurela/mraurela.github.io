@@ -258,18 +258,12 @@ footer p {
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0;
-
   padding: 20px;
   
   max-width: 80vw;
   max-height: 80vh;
   height: 350px;
   width: 500px;
-
 }
 
 .project-card:hover {
@@ -282,7 +276,23 @@ footer p {
   width: 350px;
 }
 
-.project-card img {
+.project-card a {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card a img {
   flex: 1 1 auto;
   object-fit: fill;
   border-radius: 10px 10px 0px 0px;
@@ -290,12 +300,8 @@ footer p {
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
-.project-card img:hover {
-  width: 100%;
-  height: 100%;
-}
 
-.project-card figcaption .title {
+.project-card a figcaption .title {
   flex: 0 0 auto;
   height: 50px;
   width: auto;
