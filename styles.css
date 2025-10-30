@@ -19,6 +19,10 @@ h1, h2, p {
     color: var(--font-color-light)
 }
 
+.light {
+  color: var((--font-color-dark));
+}
+
 #landing-page {
     background-color: var(--backround-color-dark);
     height: calc(100vh - 50px);
@@ -305,4 +309,11 @@ footer p {
 
   background-color: var(--background-color-nav-hover);
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#porfolio-project-description {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
 }
